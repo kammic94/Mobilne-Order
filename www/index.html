@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min" />
+		<link rel="stylesheet" href="css/themes/one.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body onload="init()">
+		
+		<!-- My app main page -->
+		<div data-role="page" id="pageone">
+		  <div data-role="header">
+			<h1>Order</h1>
+		  </div>
+		  <div data-role="main" class="ui-content">
+				<label for="text-basic">To:</label>
+				<input name="text-basic" id="text-basic" value="" type="text">
+				
+				<label for="date">Date:</label>
+				<input name="date" id="date" value="" type="date">
+				
+				<label for="select-native-fc">Product:</label>
+				<select name="select-native-fc" id="select-native-fc">
+					<option value="small">One</option>
+					<option value="medium">Two</option>
+					<option value="large">Three</option>
+					<option value="large">4</option>
+					<option value="large">5</option>
+				</select>
+				
+				<label for="text-basic">Quantity:</label>
+				<input name="text-basic" id="text-basic" value="" type="text">
+				
+				<button class="ui-shadow ui-btn ui-corner-all">Approve</button>
+				<input value="Reject" data-icon="delete" data-theme="a" type="button">
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Kamil Michalik</h1>
+		  </div> 
+		</div>	
+	</body>
+</html>
